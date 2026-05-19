@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Frontier Translational Research Lab | Boston University</title>
+<meta name="description" content="Frontier Translational Research Lab, Department of Computer Science, Boston University. Computational drug discovery, clinical AI governance, genomic epidemiology, and translational endocrinology."/>
+<style>
+:root{--bg:#f8fafc;--card:#fff;--text:#0f172a;--muted:#64748b;--border:#e2e8f0;--accent:#1e40af;--accent-light:#dbeafe;--link:#2563eb;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.6;color:var(--text);background:var(--bg)}
+[data-theme="dark"]{--bg:#0f172a;--card:#1e293b;--text:#e2e8f0;--muted:#94a3b8;--border:#334155;--accent:#60a5fa;--accent-light:#1e3a5f;--link:#93c5fd}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text)}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.page{max-width:960px;margin:0 auto;padding:2rem 1.5rem}
+.hero{text-align:center;padding:3rem 0 2rem;border-bottom:2px solid var(--border)}
+.hero h1{font-size:1.75rem;font-weight:800;letter-spacing:0.02em;color:var(--text)}
+.hero .dept{font-size:1rem;color:var(--muted);margin-top:0.3rem}
+.hero .tagline{font-size:1.05rem;color:var(--text);margin-top:1rem;max-width:700px;margin-left:auto;margin-right:auto}
+.nav{display:flex;gap:1.5rem;justify-content:center;margin-top:1.2rem;flex-wrap:wrap}
+.nav a{font-size:0.9rem;font-weight:600;color:var(--accent);padding:0.3rem 0.8rem;border:1px solid var(--accent);border-radius:999px;transition:all 150ms}
+.nav a:hover{background:var(--accent);color:#fff;text-decoration:none}
+section{margin-top:2.5rem}
+h2{font-size:1.25rem;font-weight:700;border-bottom:2px solid var(--border);padding-bottom:0.4rem;margin-bottom:1rem}
+h3{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:0.3rem}
+.track{border-left:4px solid var(--accent);padding:1rem 1.2rem;margin-bottom:1.2rem;background:var(--card);border-radius:0 0.5rem 0.5rem 0}
+.track p{font-size:0.95rem;color:var(--text);margin-top:0.3rem}
+.track .meta{font-size:0.85rem;color:var(--muted);margin-top:0.5rem}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
+@media(max-width:700px){.grid{grid-template-columns:1fr}}
+.pub{background:var(--card);border:1px solid var(--border);border-radius:0.5rem;padding:0.9rem;font-size:0.9rem}
+.pub .venue{font-size:0.78rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.04em}
+.pub .title{font-weight:600;margin-top:0.2rem}
+.pub .doi{font-size:0.82rem;color:var(--muted);margin-top:0.3rem}
+.pi{display:flex;gap:1.5rem;align-items:flex-start;margin-top:1rem}
+.pi img{width:140px;height:auto;border-radius:0.5rem;border:1px solid var(--border)}
+.pi-text h3{color:var(--text);font-size:1.1rem}
+.pi-text p{font-size:0.93rem;margin-top:0.3rem}
+.pi-text .links{margin-top:0.6rem;display:flex;gap:0.6rem;flex-wrap:wrap}
+.pi-text .links a{font-size:0.82rem;padding:0.2rem 0.6rem;border:1px solid var(--border);border-radius:999px;color:var(--accent);font-weight:600}
+.pi-text .links a:hover{background:var(--accent);color:#fff;text-decoration:none}
+@media(max-width:600px){.pi{flex-direction:column}.pi img{width:120px}}
+.stats{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin:1.5rem 0}
+.stat{text-align:center}
+.stat-n{font-size:2rem;font-weight:800;color:var(--accent);line-height:1}
+.stat-l{font-size:0.78rem;color:var(--muted)}
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--border);text-align:center;font-size:0.85rem;color:var(--muted)}
+.toggle{position:fixed;top:1rem;right:1rem;z-index:99;background:var(--card);border:1px solid var(--border);border-radius:999px;width:40px;height:40px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.2rem;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+@media print{.toggle{display:none}}
+</style>
+</head>
+<body>
+<button class="toggle" onclick="toggleTheme()" title="Toggle dark mode"><span id="ti">&#9790;</span></button>
+<script>
+function toggleTheme(){var d=document.documentElement,t=d.getAttribute('data-theme')==='dark'?'light':'dark';d.setAttribute('data-theme',t);localStorage.setItem('theme',t);document.getElementById('ti').innerHTML=t==='dark'?'&#9788;':'&#9790;'}
+(function(){var s=localStorage.getItem('theme')||(window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');if(s==='dark'){document.documentElement.setAttribute('data-theme','dark');document.addEventListener('DOMContentLoaded',function(){document.getElementById('ti').innerHTML='&#9788;'})}})();
+</script>
+
+<div class="page">
+
+<div class="hero">
+  <h1>Frontier Translational Research Lab</h1>
+  <div class="dept">Independent Research Laboratory · Julian Borges, MD, MS</div>
+  <p class="tagline">
+    We develop computational methods for drug discovery, clinical AI governance, and genomic epidemiology.
+    Our research connects quantitative modeling with clinical translation to address unmet needs in
+    mitochondrial disease, metabolic health, and precision endocrinology.
+  </p>
+  <div class="nav">
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#pi">Principal Investigator</a>
+    <a href="#resources">Code and Data</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat"><div class="stat-n">40+</div><div class="stat-l">Publications</div></div>
+  <div class="stat"><div class="stat-n">5</div><div class="stat-l">Research Programs</div></div>
+  <div class="stat"><div class="stat-n">27</div><div class="stat-l">Persistent DOIs</div></div>
+  <div class="stat"><div class="stat-n">49+</div><div class="stat-l">Peer Reviews</div></div>
+  <div class="stat"><div class="stat-n">3</div><div class="stat-l">Patent Filings</div></div>
+</div>
+
+<section id="research">
+  <h2>Research Programs</h2>
+
+  <div class="track">
+    <h3>Computational Drug Discovery</h3>
+    <p>Governed computational platform for de novo molecule design targeting genetically defined mitochondrial disease.
+       Validation case (MitoCoreX) addresses five priority targets: DRP1, PINK1, Keap1/NFE2L2, NDUFV1, and SDHA.
+       First-in-class molecule designs include a PINK1 G309D selective allosteric activator (PKA-002)
+       and a 271 Da blood-brain-barrier penetrant Keap1 disruptor (KND-002). Ten manuscripts completed, eight under journal review.
+       Five ChemRxiv preprints, ten Zenodo data deposits, Harvard Dataverse dataset published.</p>
+    <div class="meta">USPTO Provisional Patent 64/018,624 · Trademark Serial 99738691</div>
+  </div>
+
+  <div class="track">
+    <h3>Therapeutic Candidate Evaluation Standards</h3>
+    <p>The GeneVector Track is a four-paper thesis series establishing computable standards for therapeutic candidate
+       evaluation. Paper 1 defines the Therapeutic Candidate Decision Record (TCDR) as a minimum information standard.
+       Paper 2 implements a computational scoring engine across seven evaluation dimensions. Paper 3 applies the engine
+       to 20 pipeline candidates and identifies a 0.54 point evidence maturity gap as the universal translational bottleneck.
+       Paper 4 introduces the Evidence Readiness Index (ERI), a budget-constrained optimization framework that specifies
+       which experiments to run, in which order, at what cost, to maximize translational return on investment.</p>
+    <div class="meta">4 papers complete · All code released under Apache 2.0</div>
+  </div>
+
+  <div class="track">
+    <h3>Clinical AI Governance</h3>
+    <p>Research on structural failure modes in clinical AI systems, auditability infrastructure, and governance
+       standards for adaptive learning systems. The Externally Governed Learning Systems (EGLS) framework defines
+       viability constraints for adaptive computation. The AIDD-GOV open standard provides machine-readable schemas
+       for decision records, stage gates, constraint policies, and audit trails in AI-driven drug discovery.
+       Published in JAMIA Open. Academic Editor at PLOS Digital Health.</p>
+    <div class="meta">USPTO Provisional 63/975,551 · AIDD-GOV (Apache 2.0) · 49+ peer reviews completed</div>
+  </div>
+
+  <div class="track">
+    <h3>Evidence Synthesis and Systematic Review</h3>
+    <p>Iron: Friend or Foe (IronFF) is a multi-pool systematic review and meta-analysis program examining iron
+       overload across ten aging-related outcome domains: cellular aging, cardiovascular disease, diabetes mellitus,
+       neurodegeneration, carcinogenesis, male hypogonadism, thyroid dysfunction, bone metabolism, hepatic outcomes,
+       and renal outcomes. Pool 7 (Male Hypogonadism) is submitted to the European Journal of Endocrinology.
+       Pool 6 (Neurodegeneration) is submitted to Frontiers in Genetics. PROSPERO registered (CRD420261344877).</p>
+    <div class="meta">10 evidence pools · 2 manuscripts submitted · Co-investigator: Rudolph Eberwein, MD</div>
+  </div>
+
+  <div class="track">
+    <h3>Genomic Epidemiology and Mendelian Randomization</h3>
+    <p>Two-sample Mendelian randomization studies using GTEx eQTLs as instruments and OpenGWAS outcome data.
+       The CYP19A1-ASD study applies Bayesian colocalization (coloc) to evaluate shared causal variants between
+       aromatase expression and autism spectrum disorder risk. Key finding: CYP19A1 has zero eQTL records
+       across all five GTEx v8 brain tissues examined, establishing a null instrument that constrains the
+       aromatase-ASD hypothesis at the tissue-specific level.</p>
+    <div class="meta">Submitted to Frontiers in Genetics · Bayesian colocalization (PP4 = 0.017)</div>
+  </div>
+</section>
+
+<section id="publications">
+  <h2>Selected Publications</h2>
+  <div class="grid">
+    <div class="pub">
+      <div class="venue">JAMIA Open (2026)</div>
+      <div class="title">Auditing Shortcut Learning and Misclassification in AI-Based Breast Cancer Genomic Subtyping</div>
+      <div class="doi"><a href="https://doi.org/10.1093/jamiaopen/ooaf177">10.1093/jamiaopen/ooaf177</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">AI in Health (2026)</div>
+      <div class="title">ML Insights for CVD Risk Prediction in Diabetic Patients</div>
+      <div class="doi"><a href="https://doi.org/10.36922/AIH025490111">10.36922/AIH025490111</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">ChemRxiv (2026)</div>
+      <div class="title">ADMET Profiling of a Mitochondria-Focused Compound Library</div>
+      <div class="doi"><a href="https://doi.org/10.26434/chemrxiv.15001519/v1">10.26434/chemrxiv.15001519</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">ChemRxiv (2026)</div>
+      <div class="title">AI-Assisted De Novo Design of Small Molecule Candidates Targeting Mitochondrial Proteins</div>
+      <div class="doi"><a href="https://doi.org/10.26434/chemrxiv.15001592/v1">10.26434/chemrxiv.15001592</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">ChemRxiv (2026)</div>
+      <div class="title">Computational Druggability Assessment of Mitochondrial Targets</div>
+      <div class="doi"><a href="https://doi.org/10.26434/chemrxiv.15001595/v1">10.26434/chemrxiv.15001595</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">Zenodo (2026)</div>
+      <div class="title">Multi-Arm Bandit Governance for Clinical AI</div>
+      <div class="doi"><a href="https://doi.org/10.5281/zenodo.18248285">10.5281/zenodo.18248285</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">Harvard Dataverse (2026)</div>
+      <div class="title">MitoCoreX Compound Library and Validation Data</div>
+      <div class="doi"><a href="https://doi.org/10.7910/DVN/WGHUWM">10.7910/DVN/WGHUWM</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">SSRN (2026)</div>
+      <div class="title">Iron Overload and Male Hypogonadism: Systematic Review of the HPG Axis</div>
+      <div class="doi"><a href="https://doi.org/10.2139/ssrn.6427860">SSRN:6427860</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">SSRN (2026)</div>
+      <div class="title">Clinical AI as a Sociotechnical System: Structural Failure Modes</div>
+      <div class="doi"><a href="https://doi.org/10.2139/ssrn.6159427">SSRN:6159427</a> · 186 views, 52 downloads</div>
+    </div>
+    <div class="pub">
+      <div class="venue">SSRN (2026)</div>
+      <div class="title">The TCDR: A Computable Representation Standard for Translational Therapeutics</div>
+      <div class="doi"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6796779">SSRN:6796779</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">SSRN (2026)</div>
+      <div class="title">Multi-Criteria Evaluation of Therapeutic Candidates: MitoCoreX Case Series</div>
+      <div class="doi"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6796818">SSRN:6796818</a></div>
+    </div>
+    <div class="pub">
+      <div class="venue">SSRN (2026)</div>
+      <div class="title">The Evidence Readiness Index: Budget-Constrained Optimization for Translational Gap Resolution</div>
+      <div class="doi"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6796898">SSRN:6796898</a></div>
+    </div>
+  </div>
+  <p style="margin-top:1rem;font-size:0.9rem;color:var(--muted)">
+    Complete publication list available on <a href="https://orcid.org/0009-0001-9929-3135">ORCID</a> and
+    <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7628498">SSRN Author Page</a>.
+  </p>
+</section>
+
+<section id="pi">
+  <h2>Principal Investigator</h2>
+  <div class="pi">
+    <img src="https://julian-borges-md.github.io/research-profile/assets/profile.jpg" alt="Julian Borges"/>
+    <div class="pi-text">
+      <h3>Julian Borges, MD, MS</h3>
+      <p>Physician researcher and board-certified endocrinologist with more than 23 years of clinical and research
+         experience. Training at Harvard Medical School (Global Clinical Scholars Research Training, genetic epidemiology)
+         and Boston University (MS Health Informatics, data analytics). Academic affiliation with the Department of Computer Science at Boston University. Editorial appointments at PLOS Digital Health
+         (Academic Editor) and the International Journal of Epidemiology and Public Health Research (Editor in Chief).
+         Peer reviewer for European Heart Journal, European Journal of Preventive Cardiology, Nature Reviews,
+         and Diabetes and Metabolic Syndrome.</p>
+      <div class="links">
+        <a href="https://orcid.org/0009-0001-9929-3135">ORCID</a>
+        <a href="https://julian-borges-md.github.io/research-profile/">Academic CV</a>
+        <a href="https://github.com/fxmedus">GitHub</a>
+        <a href="https://www.linkedin.com/in/julian-borges-md/">LinkedIn</a>
+        <a href="https://dataverse.harvard.edu/dataverse/julian_borges">Harvard Dataverse</a>
+        <a href="mailto:jyborges@bu.edu">jyborges@bu.edu</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="resources">
+  <h2>Code and Data</h2>
+  <div class="grid">
+    <div class="pub">
+      <div class="venue">GitHub (Apache 2.0)</div>
+      <div class="title"><a href="https://github.com/fxmedus/genevector-track">genevector-track</a></div>
+      <div class="doi">TCDR standards, scoring engine, MitoCoreX case series, ERI framework. 4 manuscripts, 2 schemas, computation code.</div>
+    </div>
+    <div class="pub">
+      <div class="venue">GitHub (Apache 2.0)</div>
+      <div class="title"><a href="https://github.com/fxmedus/aidd-gov">aidd-gov</a></div>
+      <div class="doi">Open governance standard for AI-driven drug discovery. 10 schemas, 3 conformance levels, FDA regulatory alignment.</div>
+    </div>
+    <div class="pub">
+      <div class="venue">Harvard Dataverse (CC BY 4.0)</div>
+      <div class="title"><a href="https://doi.org/10.7910/DVN/WGHUWM">MitoCoreX Compound Library</a></div>
+      <div class="doi">Compound library, validation data, and manuscripts for the MitoCoreX drug discovery campaign.</div>
+    </div>
+    <div class="pub">
+      <div class="venue">Zenodo (10 deposits)</div>
+      <div class="title"><a href="https://doi.org/10.5281/zenodo.19388349">Pathway Maps through ADMET Baselines</a></div>
+      <div class="doi">Z01-Z10: pathway architecture, compound libraries, defect classifications, engine validation, molecule designs, pharmacological profiles, platform architecture, scaffold analysis, ADMET baselines.</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="font-size:0.95rem">
+    <strong>Email:</strong> <a href="mailto:jyborges@bu.edu">jyborges@bu.edu</a><br/>
+    <strong>Location:</strong> Massachusetts, United States<br/>
+    <strong>ORCID:</strong> <a href="https://orcid.org/0009-0001-9929-3135">0009-0001-9929-3135</a>
+  </p>
+  <p style="font-size:0.9rem;color:var(--muted);margin-top:0.8rem">
+    The lab welcomes inquiries regarding research collaboration, advisory roles, and academic partnerships
+    in computational drug discovery, clinical AI governance, and translational endocrinology.
+  </p>
+</section>
+
+<footer>
+  Frontier Translational Research Lab · Independent Research Laboratory<br/>
+  Julian Borges, MD, MS · Principal Investigator
+</footer>
+
+</div>
+</body>
+</html>
